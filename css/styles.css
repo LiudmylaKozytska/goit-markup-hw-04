@@ -149,7 +149,7 @@ img {
     background-color: var(--footer-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/./images/hero-image.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url("../images/hero-image.jpg");
     background-size: 1600px;
 }
 
@@ -329,16 +329,16 @@ img {
     justify-content: space-between;
 }
 
-.clients-item {
+.clients-link {
+    display:block;
     padding: 16px 32px;
     border: 1px solid var(--color-icon);
     border-radius: 4px;
-    box-sizing: border-box;
     width: 170px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
     cursor: pointer;
     border: 1px solid var(--color-decoration);
 }
@@ -348,8 +348,8 @@ img {
     fill: var(--color-icon);
 }
 
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
     fill: var(--color-decoration);
 }
 
@@ -478,6 +478,7 @@ img {
 .project-description {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 .projects {
